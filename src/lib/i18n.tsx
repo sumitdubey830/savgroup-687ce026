@@ -180,7 +180,7 @@ const en: Dict = {
   "ap.f2.name": "Ashish Dubey",
   "ap.f2.role": "Co-Founder · Director, Russia",
   "ap.f2.bio": "Based in Russia for over a decade and a graduate of an MBBS programme in the country, Ashish brings deep local knowledge and fluent cultural fluency to the business. He founded Sav Group to bridge the gap between Russian companies seeking efficient labour and skilled Indian workers looking for opportunity.",
-  "ap.f3.name": "Victoria",
+  "ap.f3.name": "Victoria Shishenya",
   "ap.f3.role": "Co-Founder · Government Affairs, Russia",
   "ap.f3.bio": "Victoria handles all government and regulatory work in Russia, managing permits, registrations and compliance end-to-end. She personally ensures every worker reaches the client company safely and on schedule, with all paperwork in perfect order.",
 
@@ -421,7 +421,7 @@ const ru: Dict = {
   "ap.f2.name": "Ашиш Дубей",
   "ap.f2.role": "Сооснователь · Директор в России",
   "ap.f2.bio": "Ашиш живёт в России более десяти лет и получил здесь медицинское образование (MBBS). Он глубоко знает местный рынок и культуру. Sav Group он основал, чтобы соединить российские компании, нуждающиеся в эффективной рабочей силе, с квалифицированными работниками из Индии.",
-  "ap.f3.name": "Виктория",
+  "ap.f3.name": "Виктория Шишеня",
   "ap.f3.role": "Сооснователь · Государственные вопросы, Россия",
   "ap.f3.bio": "Виктория ведёт всю работу с государственными органами в России — разрешения, регистрации и соблюдение законодательства от начала до конца. Она лично обеспечивает, чтобы каждый работник благополучно и вовремя прибыл к компании-заказчику со всеми документами в полном порядке.",
 
