@@ -4,7 +4,7 @@ import { useI18n } from "@/lib/i18n";
 import teamImg from "@/assets/worker-team.jpg";
 import founderSiraj from "@/assets/founder-sirajuddin.jpg";
 import founderAshish from "@/assets/founder-ashish.jpg";
-import founderVictoria from "@/assets/founder-victoria.jpg.asset.json";
+import founderVictoriaAsset from "@/assets/founder-victoria.jpg.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
