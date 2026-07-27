@@ -91,7 +91,7 @@ function About() {
             {[
               { img: founderSiraj, name: t("ap.f1.name"), role: t("ap.f1.role"), bio: t("ap.f1.bio") },
               { img: founderAshish, name: t("ap.f2.name"), role: t("ap.f2.role"), bio: t("ap.f2.bio") },
-              { img: founderVictoria, name: t("ap.f3.name"), role: t("ap.f3.role"), bio: t("ap.f3.bio") },
+              { img: founderVictoriaAsset.url, name: t("ap.f3.name"), role: t("ap.f3.role"), bio: t("ap.f3.bio") },
             ].map((f) => (
               <article key={f.name} className="bg-background border border-border rounded-2xl overflow-hidden shadow-elegant hover:translate-y-[-4px] transition-transform">
                 <div className="aspect-[4/5] overflow-hidden bg-secondary">
