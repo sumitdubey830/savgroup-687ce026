@@ -16,6 +16,7 @@ const data = [
   { year: 2023, workers: 1200 },
   { year: 2024, workers: 1850 },
   { year: 2025, workers: 2550 },
+  { year: 2026, workers: 3500 },
 ];
 
 const GOLD = "#c9a84c";
@@ -51,7 +52,7 @@ export function WorkersChart({ label }: { label: string }) {
             {label}
           </span>
           <div className="mt-2 text-4xl font-display font-bold text-primary-foreground">
-            2020 — 2025
+            2020 — 2026
           </div>
           <div className="text-sm text-primary-foreground/60 mt-1">
             Workers deployed per year
