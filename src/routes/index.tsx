@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Sav Group — Indian Workers for Russia | Manpower Supply India to Russia" },
-      { name: "description", content: "Sav Group supplies skilled & general Indian workers to companies in Russia. 2000+ workers deployed: welders, drivers, fitters, loaders. Рабочая сила из Индии." },
+      { name: "description", content: "Sav Group supplies skilled & general Indian workers to companies in Russia. 3000+ workers deployed: welders, drivers, fitters, loaders. Рабочая сила из Индии." },
       { name: "keywords", content: "Indian workers for Russia, manpower supply India to Russia, workforce solutions Russia, рабочая сила из Индии, индийские рабочие в России, hire Indian workers, Indian welders Russia, Indian drivers Russia, labour supply Russia, recruitment agency India Russia" },
       { property: "og:title", content: "Sav Group — Indian Workers for Russia" },
       { property: "og:description", content: "International manpower supply: skilled & unskilled Indian workers for Russian companies. Fast deployment, full documentation, replacement guarantee." },
@@ -104,7 +104,7 @@ function Home() {
 
             <div className="grid grid-cols-3 gap-8 mt-16 max-w-xl">
               {[
-                { n: "2000+", l: t("hero.stat1") },
+                { n: "3000+", l: t("hero.stat1") },
                 { n: "150+", l: t("hero.stat2") },
                 { n: "24/7", l: t("hero.stat3") },
               ].map((s) => (
