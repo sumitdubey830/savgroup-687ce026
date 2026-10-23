@@ -39,6 +39,7 @@ function Contact() {
             <ContactItem icon={MessageCircle} label={t("cp.whatsapp")} value="+7 922 875 6002" href="https://wa.me/79228756002" highlight />
             <ContactItem icon={Mail} label={t("cp.email")} value="contact@savgroups.com" href="mailto:contact@savgroups.com" />
             <ContactItem icon={MapPin} label={t("cp.ops")} value={t("cp.ops.value")} />
+            <ContactItem icon={MapPin} label={t("cp.address")} value={t("cp.address.value")} />
           </div>
 
           <div className="lg:col-span-3">
