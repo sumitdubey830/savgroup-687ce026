@@ -7,6 +7,7 @@ import yamata from "@/assets/clients/yamata.png";
 import ozon from "@/assets/clients/ozon.png";
 import pyaterochka from "@/assets/clients/pyaterochka.png";
 import btk from "@/assets/clients/btk.png";
+import remstroymars from "@/assets/clients/remstroymars.png";
 
 const logos = [
   { src: gazprom, alt: "Gazprom", sizeClass: "max-h-24 scale-125" },
@@ -18,6 +19,7 @@ const logos = [
   { src: ozon, alt: "Ozon", sizeClass: "max-h-24 scale-125" },
   { src: pyaterochka, alt: "Pyaterochka", sizeClass: "max-h-16" },
   { src: btk, alt: "BTK Group", sizeClass: "max-h-24 scale-125" },
+  { src: remstroymars, alt: "RemstroyMars", sizeClass: "max-h-24 scale-125" },
 ];
 
 export function ClientMarquee({ heading }: { heading: string }) {
