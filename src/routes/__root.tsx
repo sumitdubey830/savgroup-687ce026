@@ -75,6 +75,14 @@ export const Route = createRootRoute({
           logo: "https://savgroups.com/android-chrome-512x512.png",
           description: "International manpower supply company providing skilled and unskilled Indian workers to companies in Russia.",
           areaServed: ["RU", "IN"],
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Office No.4, Huda Park Rd, Kausa, Mumbra",
+            addressLocality: "Thane",
+            addressRegion: "Maharashtra",
+            postalCode: "400612",
+            addressCountry: "IN",
+          },
           contactPoint: {
             "@type": "ContactPoint",
             telephone: "+7-922-875-6002",
