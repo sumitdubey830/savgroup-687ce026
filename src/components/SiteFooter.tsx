@@ -34,7 +34,7 @@ export function SiteFooter() {
           <ul className="space-y-3 text-sm text-primary-foreground/70">
             <li className="flex items-start gap-2"><Phone className="w-4 h-4 mt-0.5 text-gold" /> +7 922 875 6002</li>
             <li className="flex items-start gap-2"><Mail className="w-4 h-4 mt-0.5 text-gold" /> <a href="mailto:contact@savgroups.com" className="hover:text-gold transition-colors">contact@savgroups.com</a></li>
-            <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 text-gold" /> {t("cp.ops.value")}</li>
+            <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 text-gold shrink-0" /> <span>{t("cp.address.value")}</span></li>
           </ul>
         </div>
       </div>
