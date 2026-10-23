@@ -39,7 +39,7 @@ function Contact() {
             <ContactItem icon={MessageCircle} label={t("cp.whatsapp")} value="+7 922 875 6002" href="https://wa.me/79228756002" highlight />
             <ContactItem icon={Mail} label={t("cp.email")} value="contact@savgroups.com" href="mailto:contact@savgroups.com" />
             <ContactItem icon={MapPin} label={t("cp.ops")} value={t("cp.ops.value")} />
-            <ContactItem icon={MapPin} label={t("cp.address")} value={t("cp.address.value")} />
+            <ContactItem icon={MapPin} label={t("cp.address")} value={t("cp.address.value")} href="https://www.google.com/maps/place/SAV+Group/@19.1587241,73.0296114,17z/data=!3m1!4b1!4m6!3m5!1s0x6b04b8745d46afe1:0xcf1ad8fabbaaf07d!8m2!3d19.1587191!4d73.0321863!16s%2Fg%2F11zbg272xn?entry=ttu&g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D" external />
           </div>
 
           <div className="lg:col-span-3">
@@ -55,7 +55,7 @@ function Contact() {
   );
 }
 
-function ContactItem({ icon: Icon, label, value, href, highlight }: { icon: typeof User; label: string; value: string; href?: string; highlight?: boolean }) {
+function ContactItem({ icon: Icon, label, value, href, highlight, external }: { icon: typeof User; label: string; value: string; href?: string; highlight?: boolean; external?: boolean }) {
   const content = (
     <div className={`flex items-start gap-4 p-5 rounded-xl border transition-all ${highlight ? "bg-gradient-gold border-gold text-navy" : "border-border hover:border-gold bg-background"}`}>
       <div className={`w-11 h-11 rounded-lg flex items-center justify-center shrink-0 ${highlight ? "bg-navy text-gold" : "bg-secondary text-navy"}`}>
@@ -67,5 +67,10 @@ function ContactItem({ icon: Icon, label, value, href, highlight }: { icon: type
       </div>
     </div>
   );
-  return href ? <a href={href} className="block">{content}</a> : content;
+  if (!href) return content;
+  return external ? (
+    <a href={href} target="_blank" rel="noopener noreferrer" className="block">{content}</a>
+  ) : (
+    <a href={href} className="block">{content}</a>
+  );
 }
