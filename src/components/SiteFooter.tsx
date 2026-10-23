@@ -34,7 +34,7 @@ export function SiteFooter() {
           <ul className="space-y-3 text-sm text-primary-foreground/70">
             <li className="flex items-start gap-2"><Phone className="w-4 h-4 mt-0.5 text-gold" /> +7 922 875 6002</li>
             <li className="flex items-start gap-2"><Mail className="w-4 h-4 mt-0.5 text-gold" /> <a href="mailto:contact@savgroups.com" className="hover:text-gold transition-colors">contact@savgroups.com</a></li>
-            <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 text-gold shrink-0" /> <span>{t("cp.address.value")}</span></li>
+            <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 text-gold shrink-0" /> <a href="https://www.google.com/maps/place/SAV+Group/@19.1587241,73.0296114,17z/data=!3m1!4b1!4m6!3m5!1s0x6b04b8745d46afe1:0xcf1ad8fabbaaf07d!8m2!3d19.1587191!4d73.0321863!16s%2Fg%2F11zbg272xn?entry=ttu&g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">{t("cp.address.value")}</a></li>
           </ul>
         </div>
       </div>
