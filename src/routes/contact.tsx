@@ -2,16 +2,17 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Phone, Mail, MessageCircle, User, MapPin } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { useI18n } from "@/lib/i18n";
+import { pageLinks } from "@/lib/seo";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Sav Group — Hire Indian Workers for Russia" },
-      { name: "description", content: "Contact Sav Group to hire Indian workers for Russia. Phone +7 922 875 6002, email contact@savgroups.com. Response within 24 hours. Заказать рабочую силу из Индии." },
-      { name: "keywords", content: "hire Indian workers Russia, contact manpower agency Russia, рабочая сила из Индии заказать, Indian workers for Russia contact, India Russia recruitment contact" },
-      { property: "og:title", content: "Contact Sav Group — Hire Indian Workers for Russia" },
+      { title: "Contact Sav Group — Hire Workers from India" },
+      { name: "description", content: "Contact Sav Group to hire skilled and general workers from India for Russia, Armenia, Greece and other countries. Phone and WhatsApp +7 922 875 6002, email contact@savgroups.com. Response within 24 hours." },
+      { property: "og:title", content: "Contact Sav Group — Hire Workers from India" },
       { property: "og:description", content: "Request workers from India for your company. We respond within 24 hours." },
     ],
+    links: pageLinks("/contact"),
   }),
   component: Contact,
 });

@@ -26,6 +26,7 @@ export function SiteFooter() {
             <li><Link to="/services" className="hover:text-gold transition-colors">{t("nav.services")}</Link></li>
             <li><Link to="/gallery" className="hover:text-gold transition-colors">{t("nav.gallery")}</Link></li>
             <li><Link to="/contact" className="hover:text-gold transition-colors">{t("nav.contact")}</Link></li>
+            <li><a href="https://savgroups.ru" hrefLang="ru" className="hover:text-gold transition-colors">{t("footer.ruSite")}</a></li>
           </ul>
         </div>
 

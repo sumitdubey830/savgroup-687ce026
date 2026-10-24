@@ -28,18 +28,18 @@ const en: Dict = {
   "gal.cta.btn": "Request Workers",
 
   // Footer
-  "footer.desc": "International manpower supply company providing skilled and unskilled workers from India to companies across Russia and globally. 3000+ workers successfully deployed.",
+  "footer.desc": "International manpower supply company providing skilled and unskilled workers from India to employers in Russia, Armenia, Greece and other countries. 3000+ workers successfully deployed.",
   "footer.quickLinks": "Quick Links",
   "footer.contact": "Contact",
   "footer.rights": "All rights reserved.",
   "footer.role": "Director",
 
   // Hero
-  "hero.badge": "India → Russia · Global Manpower",
+  "hero.badge": "India → Russia · Armenia · Greece · Worldwide",
   "hero.title1": "Reliable Workforce",
   "hero.title2": "Solutions from",
   "hero.titleHighlight": "India",
-  "hero.subtitle": "Sav Group supplies skilled and general workers to companies across Russia and globally. Trusted by major Russian businesses with 3000+ workers successfully deployed.",
+  "hero.subtitle": "Sav Group supplies skilled and general workers from India to employers in Russia, Armenia, Greece and other countries. Trusted by major Russian businesses with 3000+ workers successfully deployed.",
   "hero.cta1": "Request Workers",
   "hero.cta2": "Contact Us",
   "hero.stat1": "Workers Deployed",
@@ -49,7 +49,7 @@ const en: Dict = {
   // About section (home)
   "about.eyebrow": "About Sav Group",
   "about.title": "Your Trusted International Manpower Partner",
-  "about.p1pre": "Sav Group is an international manpower supply company specializing in providing skilled and unskilled workers from India to companies across Russia and worldwide. With years of dedicated experience in cross-border recruitment, we have placed over",
+  "about.p1pre": "Sav Group is an international manpower supply company specializing in providing skilled and unskilled workers from India to employers in Russia, Armenia, Greece and other countries. With years of dedicated experience in cross-border recruitment, we have placed over",
   "about.p1strong": "3000 Indian workers",
   "about.p1post": "in major Russian construction, logistics and manufacturing firms.",
   "about.p2": "Our reputation is built on three pillars: reliability, discipline, and cost-effectiveness. We handle every step — from sourcing and screening to visa, medicals, and on-site deployment — so you can focus on your operations.",
@@ -96,7 +96,7 @@ const en: Dict = {
   "why.eyebrow": "Why Sav Group",
   "why.title": "A Partner You Can Rely On",
   "why.1.t": "Lower Labor Costs",
-  "why.1.d": "Significantly more cost-effective than local Russian workforce without compromising quality.",
+  "why.1.d": "Significantly more cost-effective than local labour markets without compromising quality.",
   "why.2.t": "Long-Hour Capable",
   "why.2.d": "Workers comfortable with 10–12 hour shifts and demanding industrial schedules.",
   "why.3.t": "Fast Deployment",
@@ -108,7 +108,7 @@ const en: Dict = {
 
   // Testimonials
   "tst.eyebrow": "Testimonials",
-  "tst.title": "Trusted by Russian Companies",
+  "tst.title": "What Our Clients Say",
   "tst.1.role": "Project Manager",
   "tst.1.co": "Construction Company, Moscow",
   "tst.1.text": "Sav Group provided reliable workers for our construction project. Very satisfied with their discipline and work ethic. The team is professional from first contact to deployment.",
@@ -148,9 +148,9 @@ const en: Dict = {
   // About page
   "ap.eyebrow": "About Us",
   "ap.title": "Building International Workforces, One Project at a Time",
-  "ap.subtitle": "Sav Group connects Russia's leading companies with India's most capable workers.",
+  "ap.subtitle": "Sav Group connects employers in Russia, Armenia, Greece and beyond with India's most capable workers.",
   "ap.story.title": "Our Story",
-  "ap.story.p1": "Founded with a clear mission — to bridge India's enormous skilled labor pool with Russia's industrial demand — Sav Group has grown into a trusted partner for major construction firms, logistics operators and manufacturers.",
+  "ap.story.p1": "Founded with a clear mission — to bridge India's enormous skilled labor pool with industrial demand abroad — Sav Group has grown into a trusted partner for major construction firms, logistics operators and manufacturers.",
   "ap.story.p2pre": "Today, more than",
   "ap.story.p2strong": "3000 Indian workers",
   "ap.story.p2post": "are actively employed at Russian companies through our placements. Every worker is screened, documented, and prepared for the realities of international deployment before leaving India.",
@@ -217,7 +217,7 @@ const en: Dict = {
   "cp.whatsapp": "WhatsApp",
   "cp.email": "Email",
   "cp.ops": "Operations",
-  "cp.ops.value": "India · Russia",
+  "cp.ops.value": "India · Russia · Armenia · Greece",
   "cp.address": "Office Address",
   "cp.address.value": "Office No.4, Huda Park Rd, Kausa, Mumbra, Thane, Maharashtra 400612",
   "cp.form.title": "Send a Request",
@@ -240,6 +240,29 @@ const en: Dict = {
   "cp.f.err.email": "Valid email required",
   "cp.f.err.phone": "Phone is required",
   "cp.f.err.req": "Please describe your requirement",
+  "cp.f.error": "Something went wrong. Please try again.",
+
+  // Clients / chart
+  "clients.title": "Trusted by Leading Companies in Russia",
+  "chart.sub": "Workers deployed per year",
+  "chart.workers": "workers",
+  "chart.deployed": "Deployed",
+  "chart.year": "Year",
+
+  // Destinations (home)
+  "dest.eyebrow": "Destinations",
+  "dest.title": "Where We Deploy Workers",
+  "dest.subtitle": "From India to employers in several countries — with documentation handled for each destination.",
+  "dest.ru.t": "Russia",
+  "dest.ru.d": "Our core market: construction, logistics and manufacturing companies across the country.",
+  "dest.ru.link": "Visit our Russian site",
+  "dest.am.t": "Armenia",
+  "dest.am.d": "Skilled and general workers for employers in Armenia.",
+  "dest.gr.t": "Greece",
+  "dest.gr.d": "Skilled and general workers for employers in Greece.",
+  "dest.more.t": "And More",
+  "dest.more.d": "Need workers in another country? Tell us your requirement.",
+  "footer.ruSite": "Russian site (savgroups.ru)",
 
   // 404
   "nf.title": "Page not found",
@@ -271,18 +294,18 @@ const ru: Dict = {
   "gal.cta.btn": "Запросить рабочих",
 
   // Footer
-  "footer.desc": "Международная компания по подбору персонала, предоставляющая квалифицированных и неквалифицированных рабочих из Индии компаниям в России и по всему миру. Более 3000 рабочих успешно трудоустроены.",
+  "footer.desc": "Международная компания по подбору персонала, предоставляющая квалифицированных и неквалифицированных рабочих из Индии работодателям в России, Армении, Греции и других странах. Более 3000 рабочих успешно трудоустроены.",
   "footer.quickLinks": "Быстрые ссылки",
   "footer.contact": "Контакты",
   "footer.rights": "Все права защищены.",
   "footer.role": "Директор",
 
   // Hero
-  "hero.badge": "Индия → Россия · Международный персонал",
+  "hero.badge": "Индия → Россия · Армения · Греция · Весь мир",
   "hero.title1": "Надёжные кадровые",
   "hero.title2": "решения из",
   "hero.titleHighlight": "Индии",
-  "hero.subtitle": "Sav Group поставляет квалифицированных и общих рабочих компаниям в России и по всему миру. Нам доверяют ведущие российские предприятия — более 3000 успешно размещённых рабочих.",
+  "hero.subtitle": "Sav Group поставляет квалифицированных и неквалифицированных рабочих из Индии работодателям в России, Армении, Греции и других странах. Нам доверяют ведущие российские предприятия — более 3000 успешно размещённых рабочих.",
   "hero.cta1": "Запросить рабочих",
   "hero.cta2": "Связаться с нами",
   "hero.stat1": "Размещено рабочих",
@@ -292,7 +315,7 @@ const ru: Dict = {
   // About home
   "about.eyebrow": "О Sav Group",
   "about.title": "Ваш надёжный международный кадровый партнёр",
-  "about.p1pre": "Sav Group — международная компания по поставке рабочей силы, специализирующаяся на предоставлении квалифицированных и неквалифицированных рабочих из Индии компаниям в России и по всему миру. За годы работы в международном рекрутинге мы трудоустроили более",
+  "about.p1pre": "Sav Group — международная компания по поставке рабочей силы, специализирующаяся на предоставлении квалифицированных и неквалифицированных рабочих из Индии работодателям в России, Армении, Греции и других странах. За годы работы в международном рекрутинге мы трудоустроили более",
   "about.p1strong": "3000 индийских рабочих",
   "about.p1post": "в крупнейших российских строительных, логистических и производственных компаниях.",
   "about.p2": "Наша репутация строится на трёх принципах: надёжность, дисциплина и экономическая эффективность. Мы берём на себя весь процесс — от подбора и проверки до виз, медосмотров и размещения на объекте — чтобы вы могли сосредоточиться на своей работе.",
@@ -339,7 +362,7 @@ const ru: Dict = {
   "why.eyebrow": "Почему Sav Group",
   "why.title": "Партнёр, на которого можно положиться",
   "why.1.t": "Низкие затраты на труд",
-  "why.1.d": "Значительно дешевле местной рабочей силы в России без потери качества.",
+  "why.1.d": "Значительно дешевле местной рабочей силы без потери качества.",
   "why.2.t": "Готовность к долгим сменам",
   "why.2.d": "Рабочие готовы к сменам по 10–12 часов и интенсивному производственному графику.",
   "why.3.t": "Быстрое размещение",
@@ -351,7 +374,7 @@ const ru: Dict = {
 
   // Testimonials
   "tst.eyebrow": "Отзывы",
-  "tst.title": "Нам доверяют российские компании",
+  "tst.title": "Что говорят наши клиенты",
   "tst.1.role": "Руководитель проекта",
   "tst.1.co": "Строительная компания, Москва",
   "tst.1.text": "Sav Group предоставила надёжных рабочих для нашего строительного проекта. Очень довольны их дисциплиной и трудовой этикой. Команда профессиональна с первого контакта до размещения.",
@@ -391,9 +414,9 @@ const ru: Dict = {
   // About page
   "ap.eyebrow": "О нас",
   "ap.title": "Создаём международные команды — проект за проектом",
-  "ap.subtitle": "Sav Group соединяет ведущие российские компании с лучшими рабочими Индии.",
+  "ap.subtitle": "Sav Group соединяет работодателей России, Армении, Греции и других стран с лучшими рабочими Индии.",
   "ap.story.title": "Наша история",
-  "ap.story.p1": "С момента основания у нас была чёткая миссия — соединить огромный квалифицированный трудовой ресурс Индии с промышленным спросом России. Сегодня Sav Group — надёжный партнёр крупных строительных, логистических и производственных компаний.",
+  "ap.story.p1": "С момента основания у нас была чёткая миссия — соединить огромный квалифицированный трудовой ресурс Индии с промышленным спросом за рубежом. Сегодня Sav Group — надёжный партнёр крупных строительных, логистических и производственных компаний.",
   "ap.story.p2pre": "Сегодня более",
   "ap.story.p2strong": "3000 индийских рабочих",
   "ap.story.p2post": "трудятся в российских компаниях через наши размещения. Каждый рабочий проходит проверку, оформление документов и подготовку к международной работе ещё до выезда из Индии.",
@@ -460,7 +483,7 @@ const ru: Dict = {
   "cp.whatsapp": "WhatsApp",
   "cp.email": "Email",
   "cp.ops": "География работы",
-  "cp.ops.value": "Индия · Россия",
+  "cp.ops.value": "Индия · Россия · Армения · Греция",
   "cp.address": "Адрес офиса",
   "cp.address.value": "Office No.4, Huda Park Rd, Kausa, Mumbra, Thane, Maharashtra 400612",
   "cp.form.title": "Отправить заявку",
@@ -483,6 +506,29 @@ const ru: Dict = {
   "cp.f.err.email": "Введите корректный email",
   "cp.f.err.phone": "Введите телефон",
   "cp.f.err.req": "Опишите ваши требования",
+  "cp.f.error": "Что-то пошло не так. Попробуйте ещё раз.",
+
+  // Clients / chart
+  "clients.title": "Нам доверяют ведущие компании России",
+  "chart.sub": "Размещено рабочих по годам",
+  "chart.workers": "рабочих",
+  "chart.deployed": "Размещено",
+  "chart.year": "Год",
+
+  // Destinations (home)
+  "dest.eyebrow": "Направления",
+  "dest.title": "Куда мы направляем рабочих",
+  "dest.subtitle": "Из Индии — работодателям в нескольких странах, с оформлением документов под каждое направление.",
+  "dest.ru.t": "Россия",
+  "dest.ru.d": "Наш основной рынок: строительные, логистические и производственные компании по всей стране.",
+  "dest.ru.link": "Перейти на сайт для России",
+  "dest.am.t": "Армения",
+  "dest.am.d": "Квалифицированные и неквалифицированные рабочие для работодателей в Армении.",
+  "dest.gr.t": "Греция",
+  "dest.gr.d": "Квалифицированные и неквалифицированные рабочие для работодателей в Греции.",
+  "dest.more.t": "И другие страны",
+  "dest.more.d": "Нужны рабочие в другой стране? Расскажите о ваших потребностях.",
+  "footer.ruSite": "Сайт для России (savgroups.ru)",
 
   // 404
   "nf.title": "Страница не найдена",
@@ -502,6 +548,10 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     const stored = (typeof window !== "undefined" && localStorage.getItem("lang")) as Lang | null;
     if (stored === "en" || stored === "ru") setLangState(stored);
   }, []);
+
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
 
   const setLang = (l: Lang) => {
     setLangState(l);
