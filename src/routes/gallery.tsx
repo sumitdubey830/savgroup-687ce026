@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
+import { pageLinks } from "@/lib/seo";
 import img1 from "@/assets/gallery-airport-arrival.jpg";
 import img2 from "@/assets/gallery-moscow-documents.jpg";
 import img3 from "@/assets/gallery-team-arrival.jpg";
@@ -10,15 +11,15 @@ import img6 from "@/assets/gallery-winter-site.png";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Our Work — Indian Workers Deployed Across Russia | Sav Group" },
-      { name: "description", content: "Photos of Sav Group's Indian workers arriving in Russia, completing documentation in Moscow, and on industrial & construction sites. Индийские рабочие в России." },
-      { name: "keywords", content: "Indian workers in Russia, manpower deployment Russia, Indian workers construction Russia, индийские рабочие в России, рабочая сила из Индии, India Russia workforce" },
-      { property: "og:title", content: "Our Work — Indian Workers Deployed Across Russia" },
-      { property: "og:description", content: "Real photos of our deployments to Russia: airport arrivals, document processing in Moscow, and on-site work." },
+      { title: "Our Work — Indian Workers Deployed Abroad | Sav Group" },
+      { name: "description", content: "Photos of Sav Group's workers arriving in Russia, completing documentation in Moscow, and working on industrial and construction sites." },
+      { property: "og:title", content: "Our Work — Indian Workers Deployed Abroad" },
+      { property: "og:description", content: "Real photos of our deployments: airport arrivals, document processing in Moscow, and on-site work." },
       { property: "og:image", content: "https://savhr-bridge.lovable.app" + img3 },
       { name: "twitter:image", content: "https://savhr-bridge.lovable.app" + img3 },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: pageLinks("/gallery"),
   }),
   component: GalleryPage,
 });

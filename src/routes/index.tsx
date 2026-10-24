@@ -3,12 +3,13 @@ import {
   Users, FileCheck, Stethoscope, Languages, Briefcase, Plane,
   TrendingDown, Clock, Zap, ShieldCheck, Eye, ArrowRight,
   Truck, Flame, HardHat, Package, Wrench, Cog, Box, Hammer, MoreHorizontal,
-  CheckCircle2,
+  CheckCircle2, MapPin,
 } from "lucide-react";
 import { Testimonials } from "@/components/Testimonials";
 import { WorkersChart } from "@/components/WorkersChart";
 import { ClientMarquee } from "@/components/ClientMarquee";
 import { useI18n } from "@/lib/i18n";
+import { pageLinks } from "@/lib/seo";
 import heroImg from "@/assets/hero-workers.jpg";
 import welderImg from "@/assets/worker-welder.jpg";
 import warehouseImg from "@/assets/worker-warehouse.jpg";
@@ -17,16 +18,16 @@ import warehouseImg from "@/assets/worker-warehouse.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Sav Group — Indian Workers for Russia | Manpower Supply India to Russia" },
-      { name: "description", content: "Sav Group supplies skilled & general Indian workers to companies in Russia. 3000+ workers deployed: welders, drivers, fitters, loaders. Рабочая сила из Индии." },
-      { name: "keywords", content: "Indian workers for Russia, manpower supply India to Russia, workforce solutions Russia, рабочая сила из Индии, индийские рабочие в России, hire Indian workers, Indian welders Russia, Indian drivers Russia, labour supply Russia, recruitment agency India Russia" },
-      { property: "og:title", content: "Sav Group — Indian Workers for Russia" },
-      { property: "og:description", content: "International manpower supply: skilled & unskilled Indian workers for Russian companies. Fast deployment, full documentation, replacement guarantee." },
+      { title: "Sav Group — International Manpower Supply | Skilled Workers from India" },
+      { name: "description", content: "Sav Group supplies skilled and general workers from India to employers in Russia, Armenia, Greece and other countries: welders, drivers, fitters, loaders. Recruitment, visas, documentation, replacement guarantee." },
+      { property: "og:title", content: "Sav Group — International Manpower Supply from India" },
+      { property: "og:description", content: "Skilled and general workers from India for employers in Russia, Armenia, Greece and more. Fast deployment, full documentation, replacement guarantee." },
       { property: "og:image", content: heroImg },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: heroImg },
     ],
+    links: pageLinks("/"),
   }),
   component: Home,
 });
@@ -68,6 +69,13 @@ function Home() {
     { n: "02", t: t("proc.2.t"), d: t("proc.2.d") },
     { n: "03", t: t("proc.3.t"), d: t("proc.3.d") },
     { n: "04", t: t("proc.4.t"), d: t("proc.4.d") },
+  ];
+
+  const destinations = [
+    { t: t("dest.ru.t"), d: t("dest.ru.d"), href: "https://savgroups.ru" },
+    { t: t("dest.am.t"), d: t("dest.am.d") },
+    { t: t("dest.gr.t"), d: t("dest.gr.d") },
+    { t: t("dest.more.t"), d: t("dest.more.d") },
   ];
 
   return (
@@ -118,7 +126,34 @@ function Home() {
         </div>
       </section>
 
-      <ClientMarquee heading="Trusted by Leading Russian Companies" />
+      {/* DESTINATIONS */}
+      <section className="py-24 bg-background">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <span className="text-gold text-sm uppercase tracking-[0.3em] font-semibold">{t("dest.eyebrow")}</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-navy mt-3">{t("dest.title")}</h2>
+            <p className="text-muted-foreground mt-4">{t("dest.subtitle")}</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {destinations.map((d) => (
+              <div key={d.t} className="group bg-secondary p-8 rounded-xl border border-border hover:border-gold hover:shadow-elegant transition-all">
+                <div className="w-14 h-14 rounded-lg bg-navy flex items-center justify-center mb-5 group-hover:bg-gradient-gold transition-all">
+                  <MapPin className="w-6 h-6 text-gold group-hover:text-navy transition-colors" />
+                </div>
+                <h3 className="text-xl font-bold text-navy mb-2">{d.t}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{d.d}</p>
+                {d.href && (
+                  <a href={d.href} hrefLang="ru" className="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-navy hover:text-gold transition-colors">
+                    {t("dest.ru.link")} <ArrowRight className="w-4 h-4" />
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <ClientMarquee heading={t("clients.title")} />
 
       {/* ABOUT */}
 

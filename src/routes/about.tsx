@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CheckCircle2, Target, Heart, Award } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
+import { pageLinks } from "@/lib/seo";
 import teamImg from "@/assets/worker-team.jpg";
 import founderSiraj from "@/assets/founder-sirajuddin.jpg";
 import founderAshish from "@/assets/founder-ashish.jpg";
@@ -9,13 +10,13 @@ import founderVictoria from "@/assets/founder-victoria.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Sav Group — Indian Manpower Agency for Russia" },
-      { name: "description", content: "Sav Group is a trusted India-Russia manpower agency. 3000+ Indian workers placed in Russian construction, logistics & manufacturing. Поставщик рабочей силы из Индии." },
-      { name: "keywords", content: "Indian manpower agency, India Russia recruitment, manpower supply India to Russia, workforce solutions Russia, рабочая сила из Индии, индийская кадровая компания, Indian workers for Russia" },
-      { property: "og:title", content: "About Sav Group — Indian Manpower Agency for Russia" },
-      { property: "og:description", content: "Trusted international manpower supplier — 3000+ Indian workers deployed across Russia." },
+      { title: "About Sav Group — International Manpower Agency from India" },
+      { name: "description", content: "Sav Group is an India-based international manpower agency. 3000+ Indian workers deployed; supplying workers to employers in Russia, Armenia, Greece and other countries." },
+      { property: "og:title", content: "About Sav Group — International Manpower Agency from India" },
+      { property: "og:description", content: "Trusted international manpower supplier — 3000+ Indian workers deployed." },
       { property: "og:image", content: teamImg },
     ],
+    links: pageLinks("/about"),
   }),
   component: About,
 });

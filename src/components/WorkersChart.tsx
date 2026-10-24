@@ -8,6 +8,7 @@ import {
   Tooltip,
   CartesianGrid,
 } from "recharts";
+import { useI18n } from "@/lib/i18n";
 
 const data = [
   { year: 2020, workers: 120 },
@@ -22,6 +23,7 @@ const data = [
 const GOLD = "#c9a84c";
 
 export function WorkersChart({ label }: { label: string }) {
+  const { t, lang } = useI18n();
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
@@ -55,7 +57,7 @@ export function WorkersChart({ label }: { label: string }) {
             2020 — 2026
           </div>
           <div className="text-sm text-primary-foreground/60 mt-1">
-            Workers deployed per year
+            {t("chart.sub")}
           </div>
         </div>
         <div className="flex-1 mt-6 -ml-2">
@@ -92,8 +94,8 @@ export function WorkersChart({ label }: { label: string }) {
                   fontSize: 13,
                 }}
                 labelStyle={{ color: GOLD, fontWeight: 600 }}
-                formatter={(value: number) => [`${value.toLocaleString()} workers`, "Deployed"]}
-                labelFormatter={(l) => `Year ${l}`}
+                formatter={(value: number) => [`${value.toLocaleString(lang === "ru" ? "ru-RU" : "en-US")} ${t("chart.workers")}`, t("chart.deployed")]}
+                labelFormatter={(l) => `${t("chart.year")} ${l}`}
               />
               <Line
                 type="monotone"

@@ -4,18 +4,19 @@ import {
   Truck, Flame, HardHat, Package, Wrench, Cog, Box, Hammer, MoreHorizontal, ArrowRight,
 } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
+import { pageLinks } from "@/lib/seo";
 import warehouseImg from "@/assets/worker-warehouse.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Indian Worker Recruitment, Visas & Deployment to Russia | Sav Group" },
-      { name: "description", content: "End-to-end manpower supply India to Russia: recruitment, work permits, medicals, documentation, translation, on-site management. Услуги по поставке рабочей силы из Индии." },
-      { name: "keywords", content: "manpower supply India to Russia, Indian worker recruitment, work permit Russia, Russian work visa India, Indian workers deployment Russia, workforce solutions Russia, рабочая сила из Индии, услуги по подбору персонала, recruitment services India Russia" },
-      { property: "og:title", content: "Sav Group Services — Manpower Supply India to Russia" },
+      { title: "Services — Worker Recruitment, Visas & Deployment Abroad | Sav Group" },
+      { name: "description", content: "End-to-end manpower supply from India: recruitment, work permits and visas, medicals, documentation, translation and on-site management for employers in Russia, Armenia, Greece and more." },
+      { property: "og:title", content: "Sav Group Services — Manpower Supply from India" },
       { property: "og:description", content: "Full-cycle worker supply: recruitment, visas, medicals, documentation, deployment." },
       { property: "og:image", content: warehouseImg },
     ],
+    links: pageLinks("/services"),
   }),
   component: Services,
 });
