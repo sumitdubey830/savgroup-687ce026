@@ -51,7 +51,7 @@ const en: Dict = {
   "about.title": "Your Trusted International Manpower Partner",
   "about.p1pre": "Sav Group is an international manpower supply company specializing in providing skilled and unskilled workers from India to employers in Russia, Armenia, Greece and other countries. With years of dedicated experience in cross-border recruitment, we have placed over",
   "about.p1strong": "3000 Indian workers",
-  "about.p1post": "in major Russian construction, logistics and manufacturing firms.",
+  "about.p1post": "in major construction, logistics and manufacturing firms.",
   "about.p2": "Our reputation is built on three pillars: reliability, discipline, and cost-effectiveness. We handle every step — from sourcing and screening to visa, medicals, and on-site deployment — so you can focus on your operations.",
   "about.badge": "Indian workers placed in Russian companies",
   "about.check1": "Government-compliant recruitment",
@@ -243,7 +243,7 @@ const en: Dict = {
   "cp.f.error": "Something went wrong. Please try again.",
 
   // Clients / chart
-  "clients.title": "Trusted by Leading Companies in Russia",
+  "clients.title": "Trusted by Leading Companies",
   "chart.sub": "Workers deployed per year",
   "chart.workers": "workers",
   "chart.deployed": "Deployed",
