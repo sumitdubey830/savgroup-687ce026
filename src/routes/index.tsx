@@ -3,13 +3,14 @@ import {
   Users, FileCheck, Stethoscope, Languages, Briefcase, Plane,
   TrendingDown, Clock, Zap, ShieldCheck, Eye, ArrowRight,
   Truck, Flame, HardHat, Package, Wrench, Cog, Box, Hammer, MoreHorizontal,
-  CheckCircle2, MapPin,
+  CheckCircle2,
 } from "lucide-react";
 import { Testimonials } from "@/components/Testimonials";
 import { WorkersChart } from "@/components/WorkersChart";
 import { ClientMarquee } from "@/components/ClientMarquee";
 import { useI18n } from "@/lib/i18n";
 import { pageLinks } from "@/lib/seo";
+import { landmarks } from "@/components/LandmarkIcons";
 import heroImg from "@/assets/hero-workers.jpg";
 import welderImg from "@/assets/worker-welder.jpg";
 import warehouseImg from "@/assets/worker-warehouse.jpg";
@@ -72,11 +73,16 @@ function Home() {
   ];
 
   const destinations = [
-    { t: t("dest.ru.t"), d: t("dest.ru.d"), href: "https://savgroups.ru" },
-    { t: t("dest.am.t"), d: t("dest.am.d") },
-    { t: t("dest.gr.t"), d: t("dest.gr.d") },
-    { t: t("dest.more.t"), d: t("dest.more.d") },
-  ];
+    { code: "ru", label: t("dest.ru") },
+    { code: "am", label: t("dest.am") },
+    { code: "gr", label: t("dest.gr") },
+    { code: "ae", label: t("dest.ae") },
+    { code: "kw", label: t("dest.kw") },
+    { code: "om", label: t("dest.om") },
+    { code: "jp", label: t("dest.jp") },
+    { code: "de", label: t("dest.de") },
+    { code: "by", label: t("dest.by") },
+  ] as const;
 
   return (
     <>
@@ -134,21 +140,16 @@ function Home() {
             <h2 className="text-4xl md:text-5xl font-bold text-navy mt-3">{t("dest.title")}</h2>
             <p className="text-muted-foreground mt-4">{t("dest.subtitle")}</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {destinations.map((d) => (
-              <div key={d.t} className="group bg-secondary p-8 rounded-xl border border-border hover:border-gold hover:shadow-elegant transition-all">
-                <div className="w-14 h-14 rounded-lg bg-navy flex items-center justify-center mb-5 group-hover:bg-gradient-gold transition-all">
-                  <MapPin className="w-6 h-6 text-gold group-hover:text-navy transition-colors" />
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            {destinations.map((d) => {
+              const Landmark = landmarks[d.code];
+              return (
+                <div key={d.code} className="group bg-secondary border border-border hover:bg-navy hover:border-navy p-6 rounded-xl text-center transition-all cursor-default">
+                  <Landmark className="w-12 h-12 mx-auto text-navy group-hover:text-gold transition-colors" />
+                  <div className="mt-3 font-semibold text-navy group-hover:text-primary-foreground transition-colors">{d.label}</div>
                 </div>
-                <h3 className="text-xl font-bold text-navy mb-2">{d.t}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{d.d}</p>
-                {d.href && (
-                  <a href={d.href} hrefLang="ru" className="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-navy hover:text-gold transition-colors">
-                    {t("dest.ru.link")} <ArrowRight className="w-4 h-4" />
-                  </a>
-                )}
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
