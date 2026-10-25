@@ -51,7 +51,7 @@ const en: Dict = {
   "about.title": "Your Trusted International Manpower Partner",
   "about.p1pre": "Sav Group is an international manpower supply company specializing in providing skilled and unskilled workers from India to employers in Russia, Armenia, Greece and other countries. With years of dedicated experience in cross-border recruitment, we have placed over",
   "about.p1strong": "3000 Indian workers",
-  "about.p1post": "in major Russian construction, logistics and manufacturing firms.",
+  "about.p1post": "in major construction, logistics and manufacturing firms.",
   "about.p2": "Our reputation is built on three pillars: reliability, discipline, and cost-effectiveness. We handle every step — from sourcing and screening to visa, medicals, and on-site deployment — so you can focus on your operations.",
   "about.badge": "Indian workers placed in Russian companies",
   "about.check1": "Government-compliant recruitment",
@@ -243,7 +243,7 @@ const en: Dict = {
   "cp.f.error": "Something went wrong. Please try again.",
 
   // Clients / chart
-  "clients.title": "Trusted by Leading Companies in Russia",
+  "clients.title": "Trusted by Leading Companies",
   "chart.sub": "Workers deployed per year",
   "chart.workers": "workers",
   "chart.deployed": "Deployed",
@@ -317,7 +317,7 @@ const ru: Dict = {
   "about.title": "Ваш надёжный международный кадровый партнёр",
   "about.p1pre": "Sav Group — международная компания по поставке рабочей силы, специализирующаяся на предоставлении квалифицированных и неквалифицированных рабочих из Индии работодателям в России, Армении, Греции и других странах. За годы работы в международном рекрутинге мы трудоустроили более",
   "about.p1strong": "3000 индийских рабочих",
-  "about.p1post": "в крупнейших российских строительных, логистических и производственных компаниях.",
+  "about.p1post": "в крупнейших строительных, логистических и производственных компаниях.",
   "about.p2": "Наша репутация строится на трёх принципах: надёжность, дисциплина и экономическая эффективность. Мы берём на себя весь процесс — от подбора и проверки до виз, медосмотров и размещения на объекте — чтобы вы могли сосредоточиться на своей работе.",
   "about.badge": "индийских рабочих в российских компаниях",
   "about.check1": "Лицензированный рекрутинг",
@@ -509,7 +509,7 @@ const ru: Dict = {
   "cp.f.error": "Что-то пошло не так. Попробуйте ещё раз.",
 
   // Clients / chart
-  "clients.title": "Нам доверяют ведущие компании России",
+  "clients.title": "Нам доверяют ведущие компании",
   "chart.sub": "Размещено рабочих по годам",
   "chart.workers": "рабочих",
   "chart.deployed": "Размещено",
