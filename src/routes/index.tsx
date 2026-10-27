@@ -118,7 +118,7 @@ function Home() {
 
             <div className="grid grid-cols-3 gap-8 mt-16 max-w-xl">
               {[
-                { n: "3000+", l: t("hero.stat1") },
+                { n: "5000+", l: t("hero.stat1") },
                 { n: "150+", l: t("hero.stat2") },
                 { n: "24/7", l: t("hero.stat3") },
               ].map((s) => (
