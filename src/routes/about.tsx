@@ -11,9 +11,9 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About Sav Group — International Manpower Agency from India" },
-      { name: "description", content: "Sav Group is an India-based international manpower agency. 3000+ Indian workers deployed; supplying workers to employers in Russia, Armenia, Greece and other countries." },
+      { name: "description", content: "Sav Group is an India-based international manpower agency. 5000+ Indian workers deployed; supplying workers to employers in Russia, Armenia, Greece and other countries." },
       { property: "og:title", content: "About Sav Group — International Manpower Agency from India" },
-      { property: "og:description", content: "Trusted international manpower supplier — 3000+ Indian workers deployed." },
+      { property: "og:description", content: "Trusted international manpower supplier — 5000+ Indian workers deployed." },
       { property: "og:image", content: teamImg },
     ],
     links: pageLinks("/about"),

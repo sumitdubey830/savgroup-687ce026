@@ -11,13 +11,13 @@ import {
 import { useI18n } from "@/lib/i18n";
 
 const data = [
-  { year: 2020, workers: 120 },
-  { year: 2021, workers: 380 },
-  { year: 2022, workers: 720 },
-  { year: 2023, workers: 1200 },
-  { year: 2024, workers: 1850 },
-  { year: 2025, workers: 2550 },
-  { year: 2026, workers: 3500 },
+  { year: 2020, workers: 200 },
+  { year: 2021, workers: 520 },
+  { year: 2022, workers: 980 },
+  { year: 2023, workers: 1660 },
+  { year: 2024, workers: 2420 },
+  { year: 2025, workers: 3650 },
+  { year: 2026, workers: 5350 },
 ];
 
 const GOLD = "#c9a84c";
