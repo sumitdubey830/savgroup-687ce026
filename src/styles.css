@@ -89,6 +89,12 @@
     font-family: var(--font-display);
     letter-spacing: -0.02em;
   }
+  /* Playfair Display defaults to old-style numerals, so digits sit at different
+     heights (e.g. "5000+"). Use lining numerals wherever the display font is used. */
+  h1, h2, h3, h4, .font-display {
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum" 1;
+  }
 }
 
 @layer utilities {
